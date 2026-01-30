@@ -1,11 +1,20 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.1.10",
   "info": {
     "title": "Aiko Gestalt Writer",
     "version": "1.0.0"
   },
   "paths": {
     "/": {
+      "get" : {
+        "summary": "health check",
+        "operationId": "healthCheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "summary": "Write a new gestalt to memory",
         "operationId": "writeGestalt",
@@ -16,9 +25,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "token": {
-                    "type": "string"
-                  },
                   "title": {
                     "type": "string"
                   },
@@ -36,7 +42,6 @@
                   }
                 },
                 "required": [
-                  "token",
                   "title",
                   "tier",
                   "content"
