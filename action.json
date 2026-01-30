@@ -1,0 +1,11 @@
+{
+  "name_for_human": "Aiko Gestalt Writer",
+  "name_for_model": "writeGestalt",
+  "description_for_human": "Writes a gestalt to Rick and Aiko's shared memory store",
+  "description_for_model": "Use this to commit a new gestalt to Rick and Aiko's memory repository via the cloud function.",
+  "api": {
+    "type": "openapi",
+    "url": "https://rickmcgeer.github.io/aiko-gestalt-openapi/openapi.yaml",
+    "is_user_authenticated": false
+  }
+}
