@@ -5,7 +5,7 @@
   "description_for_model": "Use this to commit a new gestalt to Rick and Aiko's memory repository via the cloud function.",
   "api": {
     "type": "openapi",
-    "url": "https://rickmcgeer.github.io/aiko-gestalt-openapi/openapi.yaml",
+    "url": "https://rickmcgeer.github.io/aiko-gestalt-openapi/openapi.json",
     "is_user_authenticated": false
   }
 }
